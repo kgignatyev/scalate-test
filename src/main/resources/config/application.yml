@@ -1,0 +1,18 @@
+server:
+  port: 7100
+
+#kongAdminUrl: "http://localhost:8001/api/v1/namespaces/inspurusa/services/listless-liger-kong-admin:kong-admin/proxy/"
+kongAdminUrl: "http://localhost:18001"
+
+consulAdminUrl: "http://localhost:8500"
+
+k8SAdminUrl: "http://localhost:8001"
+
+logging:
+        level:
+           root: "INFO"
+           org:
+               thymeleaf: "TRACE"
+
+
+

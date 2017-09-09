@@ -1,0 +1,13 @@
+logging:
+        level:
+           root: "INFO"
+           com:
+            inspurusa: "DEBUG"
+
+project:
+  base-dir: "file://${user.dir}"
+
+management:
+  security:
+    enabled: false
+

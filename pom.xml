@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <groupId>org.springframework.boot</groupId>
+        <version>1.5.6.RELEASE</version>
+        <relativePath/>
+    </parent>
+
+
+    <groupId>com.inspur</groupId>
+    <artifactId>scalatra-test</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <prerequisites>
+        <maven>3.5</maven>
+    </prerequisites>
+
+    <properties>
+        <activation.version>1.1.1</activation.version>
+
+        <aspectj.version>1.8.10</aspectj.version>
+        <aws-sdk.version>1.11.170</aws-sdk.version>
+        <commons-io.version>2.5</commons-io.version>
+        <commons-beanutils.version>1.9.3</commons-beanutils.version>
+        <commons-codec.version>1.10</commons-codec.version>
+        <commons-lang.version>2.6</commons-lang.version>
+        <commons-lang3.version>3.6</commons-lang3.version>
+        <consul-clisent.version>0.16.3</consul-clisent.version>
+        <cucumber-jvm.version>1.2.5</cucumber-jvm.version>
+        <dom4j.version>2.0.0</dom4j.version>
+        <ehcache.version>2.10.3</ehcache.version>
+        <hibernate.version>5.4.1.Final</hibernate.version>
+        <httpclient.version>4.5.3</httpclient.version>
+        <itextpdf.version>5.5.10</itextpdf.version>
+        <jackson.version>2.8.8</jackson.version>
+        <jak.version>2.2.1</jak.version>
+        <javamail.version>1.5.0-b01</javamail.version>
+        <javamelody.version>1.63.0</javamelody.version>
+        <java-jwt.version>3.2.0</java-jwt.version>
+        <javax-el.version>3.0.1-b08</javax-el.version>
+        <jaxen.version>1.1.6</jaxen.version>
+
+        <jetty.version>9.4.2.v20170220</jetty.version>
+        <joda-time.version>2.9.7</joda-time.version>
+        <jtidy.version>r938</jtidy.version>
+        <json-patch.version>1.8-SNAPSHOT</json-patch.version>
+        <json4s.version>3.5.0</json4s.version>
+        <log4j.version>1.2.17</log4j.version>
+        <plugin.compiler>2.3.2</plugin.compiler>
+        <plugin.dependency>3.0.0</plugin.dependency>
+        <plugin.failsafe>2.18</plugin.failsafe>
+        <plugin.grunt>1.5.1</plugin.grunt>
+        <plugin.javadoc>2.8.1</plugin.javadoc>
+        <plugin.scalatest>1.0</plugin.scalatest>
+        <plugin.source>2.1.2</plugin.source>
+        <plugin.surefire>2.19.1</plugin.surefire>
+        <plugin.tomcat7>2.2</plugin.tomcat7>
+        <slf4j-version>1.7.24</slf4j-version>
+        <scala.binary>2.12</scala.binary>
+        <scala.version>2.12.3</scala.version>
+        <scalate.version>2.2.0</scalate.version>
+        <sclatest.version>3.0.1</sclatest.version>
+        <scopt.version>3.5.0</scopt.version>
+        <scala-maven-plugin.version>3.2.2</scala-maven-plugin.version>
+        <spring.version>4.3.10.RELEASE</spring.version>
+
+
+        <validation-api.version>1.1.0.Final</validation-api.version>
+
+        <spring-hateoas.version>0.22.0.RELEASE</spring-hateoas.version>
+
+        <failIfNoTests>false</failIfNoTests>
+    </properties>
+
+    <dependencies>
+
+
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>${scala.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-compiler</artifactId>
+            <version>${scala.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scalap</artifactId>
+            <version>${scala.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-reflect</artifactId>
+            <version>${scala.version}</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/javax.inject/javax.inject -->
+        <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+            <version>1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.scalatra.scalate/scalate-core_2.12 -->
+        <dependency>
+            <groupId>org.scalatra.scalate</groupId>
+            <artifactId>scalate-core_${scala.binary}</artifactId>
+            <version>1.8.0</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-logging</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>appassembler-maven-plugin</artifactId>
+                <version>1.10</version>
+                <configuration>
+                    <programs>
+                        <program>
+                            <mainClass>com.inspurusa.consul.apigateway.integration.ServicesControl</mainClass>
+                            <id>ctrl</id>
+                        </program>
+                    </programs>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>3.0.0</version>
+            </plugin>
+            <plugin>
+                <groupId>net.alchim31.maven</groupId>
+                <artifactId>scala-maven-plugin</artifactId>
+                <version>${scala-maven-plugin.version}</version>
+
+
+                <executions>
+                    <execution>
+                        <id>compile</id>
+                        <goals>
+                            <goal>compile</goal>
+                        </goals>
+                        <phase>compile</phase>
+                    </execution>
+                    <execution>
+                        <id>test-compile</id>
+                        <goals>
+                            <goal>testCompile</goal>
+                        </goals>
+                        <phase>test-compile</phase>
+                    </execution>
+                    <execution>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>compile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <scalaVersion>${scala.version}</scalaVersion>
+                    <recompileMode>incremental</recompileMode>
+                    <useZincServer>true</useZincServer>
+                    <jvmArgs>
+                        <jvmArg>-Xms124m</jvmArg>
+                        <jvmArg>-Xmx2048m</jvmArg>
+                    </jvmArgs>
+                    <args>
+                        <arg>-feature</arg>
+                        <arg>-deprecation</arg>
+                        <!--<arg>-Ystatistics</arg>-->
+                        <!--<arg> -Ytyper-debug</arg>-->
+                        <arg>-language:postfixOps</arg>
+                    </args>
+                    <!--<args>-->
+                    <!--<arg>-target:jvm-1.5</arg>-->
+
+                    <!-- to support mix java/scala only -->
+                    <!--<arg>-make:transitivenocp</arg>-->
+                    <!--<arg>-dependencyfile</arg>-->
+                    <!--<arg>${project.build.directory}/.scala_dependencies</arg>-->
+                    <!--</args>-->
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>units</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>${plugin.surefire}</version>
+                        <configuration>
+                            <excludes>
+                                <exclude>**/*Cuke*</exclude>
+                            </excludes>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>cuke</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>${plugin.surefire}</version>
+                        <configuration>
+                            <includes>
+                                <include>**/*CukeTest</include>
+                            </includes>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+
+</project>
