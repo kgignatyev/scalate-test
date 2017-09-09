@@ -17,5 +17,5 @@ When all packaged into executable jar, ssp compiler does NOT work
     mvn -f pom-executable-jar.xml clean install
     
     Trying it
-    java -jar target/scalatra-test-1.0-SNAPSHOT.jar 
+    java -jar target/scalate-test-1.0-SNAPSHOT.jar 
 
