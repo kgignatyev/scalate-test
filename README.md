@@ -1,4 +1,4 @@
-demonstrates problem with scalatra inside executable jar
+demonstrates problem with scalate inside executable jar
 
 Traditional app works
 ---
